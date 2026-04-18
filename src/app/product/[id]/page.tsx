@@ -27,29 +27,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
 
   return (
     <main className="bg-[#fcfcfc] text-black font-sans relative">
-      <nav className="fixed top-0 w-full z-50 bg-[#fcfcfc]">
-        <div className="flex items-center justify-between px-8 py-6">
-          <Link href="/" className="text-xl font-bold tracking-widest uppercase">COLIN GUEST</Link>
-          <div className="hidden md:flex gap-12 text-[10px] tracking-[0.2em] uppercase font-bold">
-            <button className="hover:text-black/60 transition-colors">Runway</button>
-            <Link href="/" className="hover:text-black/60 transition-colors">The Lookbook</Link>
-            <Link href="/collections" className="text-black border-b border-black pb-1">Collections</Link>
-          </div>
-          <div className="flex items-center gap-6 text-xs font-semibold tracking-widest uppercase mb-1">
-            <Search size={18} />
-            <Link href="/login" className="cursor-pointer hover:scale-110 transition-transform block">
-              <User size={18} strokeWidth={1.5} />
-            </Link>
-            <Link href="/wishlist" className="cursor-pointer hover:scale-110 transition-transform block">
-              <Bookmark size={18} strokeWidth={1.5} />
-            </Link>
-            <div className="flex items-center gap-2 cursor-pointer hover:text-black/60 transition-colors" onClick={openCart}>
-              <ShoppingBag size={18} />
-              <span>Cart ({items.length})</span>
-            </div>
-          </div>
-        </div>
-      </nav>
+
 
       {/* 3-Column PDP Grid perfectly equal sizes matching Bluorng */}
       <div className="flex w-full min-h-screen pt-[80px] px-4 gap-4">

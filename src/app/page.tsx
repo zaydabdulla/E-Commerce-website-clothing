@@ -20,29 +20,7 @@ export default function Home() {
 
   return (
     <main ref={containerRef} className="bg-[#f9f9fa] text-black font-sans relative h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
-      <nav className="fixed top-0 w-full z-50 bg-[#f9f9fa]/90 backdrop-blur-md border-b border-black/5">
-        <div className="flex items-center justify-between px-8 py-6">
-          <h1 className="text-xl font-bold tracking-widest uppercase">COLIN GUEST</h1>
-          <div className="hidden md:flex gap-12 text-[10px] tracking-[0.2em] uppercase font-bold">
-            <button className="hover:text-black/60 transition-colors">Runway</button>
-            <button className="text-black border-b border-black pb-1">The Lookbook</button>
-            <Link href="/collections" className="hover:text-black/60 transition-colors">Collections</Link>
-          </div>
-          <div className="flex items-center gap-6 text-xs font-semibold tracking-widest uppercase">
-            <Search size={18} />
-            <Link href="/login" className="cursor-pointer hover:scale-110 transition-transform block">
-              <User size={18} strokeWidth={1.5} />
-            </Link>
-            <Link href="/wishlist" className="cursor-pointer hover:scale-110 transition-transform block">
-              <Bookmark size={18} strokeWidth={1.5} />
-            </Link>
-            <div className="flex items-center gap-2 cursor-pointer hover:text-black/60 transition-colors" onClick={openCart}>
-              <ShoppingBag size={18} />
-              <span>Cart ({items.length})</span>
-            </div>
-          </div>
-        </div>
-      </nav>
+
 
       <div className="flex w-full pt-20 relative">
         {/* LEFT/CENTER: Sticky 3D Carousel (Expanded to fill the whole left space without text!) */}
