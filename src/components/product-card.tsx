@@ -38,8 +38,8 @@ export function ProductCard({ product, index = 0 }: { product: Product, index?: 
         transition={{ 
           duration: 0.8,
           delay: index % 4 * 0.1, // Stagger based on column position
-          ease: [0.215, 0.61, 0.355, 1]
-        }}
+          ease: "easeOut"
+        } as any}
         className="relative w-full aspect-[4/5] bg-[#f8f8f8] rounded-[24px] mb-3 overflow-hidden flex items-center justify-center p-0 border border-black/5 group-hover:shadow-md transition-shadow duration-500"
       >
         {/* Heart / Bookmark Icon mapped to global store */}
