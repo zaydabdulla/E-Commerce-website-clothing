@@ -6,6 +6,7 @@ import { Search, ShoppingBag, Bookmark, Clock, ArrowRight, User } from "lucide-r
 import { useCartStore } from "@/lib/store";
 import { ProductCard } from "@/components/product-card";
 import { useRouter } from "next/navigation";
+import { type Product } from "@/lib/data";
 
 export default function WishlistDashboard() {
   const router = useRouter();
@@ -71,7 +72,7 @@ export default function WishlistDashboard() {
          <div className="max-w-[1500px] mx-auto px-8 pt-12 pb-24">
             {/* The Swym styling in image_14 features gigantic grid mapping instead of small squares */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
-               {wishlistItems.map((product) => (
+               {wishlistItems.map((product: Product) => (
                  <div key={product.id} className="group relative">
                     {/* The Product Image Container bounds completely without border rounding in the specific swym view, but let's keep it clean */}
                     <div className="w-full aspect-[4/5] bg-gradient-to-tr from-[#ececec] to-white rounded-2xl overflow-hidden relative mb-4 shadow-sm border border-black/5 cursor-pointer">
