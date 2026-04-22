@@ -15,7 +15,7 @@ export function Navbar() {
       <div className="grid grid-cols-3 items-center px-8 h-[72px] text-black">
         {/* LEFT: Branding */}
         <div className="flex justify-start">
-          <Link href="/" className="relative h-[72px] w-64 hover:opacity-60 transition-opacity flex items-center overflow-hidden">
+          <Link href="/" className="relative h-[72px] w-64 hover:opacity-60 transition-opacity flex items-center overflow-hidden ml-[-24px]">
             <Image 
               src="/logo_cg.png" 
               alt="COLIN GUEST" 
