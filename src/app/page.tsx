@@ -11,7 +11,7 @@ export default async function Home() {
     src: p.images.edges[0]?.node.url || "/placeholder.jpg",
     title: p.title,
     price: `${p.priceRange.minVariantPrice.currencyCode === 'INR' ? 'RS. ' : '$'}${parseFloat(p.priceRange.minVariantPrice.amount).toLocaleString()}`,
-    desc: p.description,
+    desc: p.teaser?.value || p.description,
     category: p.productType || "Collection"
   }));
 

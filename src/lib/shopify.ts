@@ -59,6 +59,9 @@ export async function getCollectionProducts(handle: string) {
                   currencyCode
                 }
               }
+              teaser: metafield(namespace: "custom", key: "short_description") {
+                value
+              }
               images(first: 5) {
                 edges {
                   node {
